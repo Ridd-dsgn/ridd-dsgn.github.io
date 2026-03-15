@@ -72,18 +72,16 @@ body {
     transform: translateX(8px); /* Efek geser ke kanan saat disentuh */
     box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
 }
-
-/* Galeri Foto */
-.gallery-item {
-    aspect-ratio: 4/3; /* Memastikan semua foto ukurannya seragam */
+/* Efek Hover untuk Skill Cards */
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
 }
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Memotong foto agar pas di kotak tanpa mengubah proporsi */
-    transition: transform 0.5s ease;
-    cursor: pointer;
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
 }
-.gallery-item:hover img {
-    transform: scale(1.1); /* Efek zoom in yang elegan pada foto */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
